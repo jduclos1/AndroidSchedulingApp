@@ -1,0 +1,8 @@
+Upcoming Schedule for Each Consultant: 
+joe: 
+04-10-2018: Taco tuesday from 12:00PM to 1:30PM MST. 
+04-11-2018: Testing from 1:00PM to 1:30PM MST. 
+05-15-2018: testing again from 2:00PM to 2:45PM MST. 
+04-26-2018: testing 3 from 1:20PM to 4:00PM MST. 
+mike: 
+04-18-2018: testing mike from 2:00PM to 3:00PM MST. 

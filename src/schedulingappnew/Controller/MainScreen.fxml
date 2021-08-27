@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:id="mainGrid" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schedulingappnew.Controller.MainScreenController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="825.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="320.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="250.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <TableView fx:id="custTable" prefHeight="250.0" prefWidth="1000.0" GridPane.rowIndex="3">
+        <columns>
+          <TableColumn fx:id="nameCol" prefWidth="175.0" />
+          <TableColumn fx:id="addy1Col" prefWidth="175.0" />
+            <TableColumn fx:id="addy2Col" prefWidth="175.0" />
+            <TableColumn fx:id="cityCol" prefWidth="150.0" />
+            <TableColumn fx:id="countryCol" prefWidth="150.0" />
+            <TableColumn fx:id="phoneCol" prefWidth="175.0" />
+        </columns>
+      </TableView>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
+         <children>
+            <Button fx:id="addCustButton" mnemonicParsing="false" onAction="#addCustHandler" prefHeight="25.0" prefWidth="175.0" text="Add Customer">
+               <HBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="50.0" top="15.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="modCustButton" mnemonicParsing="false" onAction="#modCustHandler" prefHeight="25.0" prefWidth="175.0" text="Modify Customer">
+               <HBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="50.0" top="15.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="remCustButton" alignment="CENTER" mnemonicParsing="false" onAction="#remCustHandler" prefHeight="25.0" prefWidth="175.0" text="Remove Customer">
+               <HBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="todayButton" mnemonicParsing="false" onAction="#todayButtonHandler" prefHeight="25.0" prefWidth="175.0" text="Today">
+               <HBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </HBox.margin>
+            </Button>
+            <Pane prefHeight="200.0" prefWidth="200.0" />
+            <Button fx:id="weekViewButton" mnemonicParsing="false" onAction="#weekViewButtonHandler" prefHeight="25.0" prefWidth="175.0" text="Weekly View">
+               <HBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </HBox>
+      <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="4">
+         <children>
+            <Button fx:id="addAppButton" mnemonicParsing="false" onAction="#addAppHandler" prefHeight="25.0" prefWidth="175.0" text="Add Appoinment">
+               <HBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="appSumButton" mnemonicParsing="false" onAction="#appSumHandler" prefHeight="25.0" prefWidth="175.0" text="Appointment Summary">
+               <HBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="reportsButton" mnemonicParsing="false" onAction="#reportsHandler" prefHeight="25.0" prefWidth="175.0" text="Reports">
+               <HBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </HBox.margin>
+            </Button>
+            <Pane prefHeight="55.0" prefWidth="275.0" />
+            <Button fx:id="mainExitButton" mnemonicParsing="false" onAction="#exitAppHandler" prefHeight="25.0" prefWidth="70.0" text="Exit">
+               <HBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</GridPane>

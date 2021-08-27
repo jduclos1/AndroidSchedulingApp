@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schedulingappnew.Controller.AppSummaryController">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="500.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="225.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+         <GridPane.margin>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </GridPane.margin>
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="175.0" prefWidth="200.0">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <children>
+                  <Button fx:id="sumCustDataButton" mnemonicParsing="false" onAction="#sumCustDataButtonHandler" prefWidth="200.0" text="Get Customer Data">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="sumModButton" mnemonicParsing="false" onAction="#sumModButtonHandler" prefWidth="200.0" text="Modify">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="sumDelButton" mnemonicParsing="false" onAction="#sumDelButtonHandler" prefWidth="200.0" text="Delete">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
+         <children>
+            <Label fx:id="sumTitleLabel" text="Title:" />
+            <Label fx:id="sumDescLabel" text="Description:" />
+            <Label fx:id="sumLocationLabel" text="Location:" />
+            <Label fx:id="sumContactLabel" text="Contact:" />
+            <Label fx:id="sumURLLabel" text="URL:" />
+            <Label fx:id="sumDateLabel" text="Date:" />
+            <Label fx:id="sumStartLabel" text="Start Time:" />
+            <Label fx:id="sumEndLabel" text="End Time:" />
+            <Label fx:id="sumCreatedLabel" text="Created By:" />
+         </children>
+         <GridPane.margin>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </GridPane.margin>
+      </VBox>
+      <TableView fx:id="sumTable" prefHeight="200.0" prefWidth="550.0">
+        <columns>
+          <TableColumn fx:id="sumTitleCol" prefWidth="225.0" text="Title" />
+          <TableColumn fx:id="sumContactCol" prefWidth="150.0" text="Contact" />
+            <TableColumn fx:id="sumDateCol" prefWidth="150.0" text="Date" />
+        </columns>
+         <GridPane.margin>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </GridPane.margin>
+      </TableView>
+      <VBox alignment="BOTTOM_CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="sumCancelButton" alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#sumCancelButtonHandler" prefWidth="200.0" text="Cancel">
+               <VBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</GridPane>

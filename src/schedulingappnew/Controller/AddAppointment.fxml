@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.FXCollections ?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schedulingappnew.Controller.AddAppointmentController">
+   <children>
+      <Label fx:id="addAppScreenTitleLabel" layoutX="14.0" layoutY="14.0" text="Add Appointment">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="addAppTitleLabel" layoutX="14.0" layoutY="65.0" text="Title" />
+      <Label fx:id="addAppDescrLabel" layoutX="355.0" layoutY="65.0" text="Description" />
+      <Label fx:id="addAppLocationLabel" layoutX="14.0" layoutY="115.0" text="Location" />
+      <Label fx:id="addAppContactLabel" layoutX="14.0" layoutY="160.0" text="Contact" />
+      <Label fx:id="addAppURLLabel" layoutX="355.0" layoutY="160.0" text="URL" />
+      <Label fx:id="addAppDateLabel" layoutX="720.0" layoutY="65.0" text="Date" />
+      <Label fx:id="addAppStartLabel" layoutX="720.0" layoutY="115.0" text="Start Time" />
+      <Label fx:id="addAppEndLabel" layoutX="720.0" layoutY="160.0" text="End Time" />
+      <TextField fx:id="addAppTitleTf" layoutX="90.0" layoutY="61.0" prefWidth="250.0" promptText="Title" />
+      <TextField fx:id="addAppLocationTf" layoutX="90.0" layoutY="111.0" prefWidth="250.0" promptText="Location" />
+      <TextField fx:id="addAppContactTf" layoutX="90.0" layoutY="158.0" prefWidth="250.0" promptText="Contact" />
+      <TextField fx:id="addAppURLTf" layoutX="450.0" layoutY="158.0" prefWidth="250.0" promptText="URL" />
+      <TextField fx:id="addAppDescrTf" layoutX="450.0" layoutY="61.0" prefHeight="75.0" prefWidth="250.0" promptText="Description" />
+      <DatePicker fx:id="addAppDateTf" layoutX="875.0" layoutY="61.0" prefWidth="100.0" />
+      <TextField fx:id="addAppStartHourTF" layoutX="827.0" layoutY="106.0" prefHeight="25.0" prefWidth="42.0" />
+      <TextField fx:id="addAppStartMinTF" layoutX="883.0" layoutY="106.0" prefHeight="25.0" prefWidth="42.0" />
+      <TextField fx:id="addAppEndHourTF" layoutX="827.0" layoutY="156.0" prefHeight="25.0" prefWidth="42.0" />
+      <TextField fx:id="addAppEndMinTF" layoutX="883.0" layoutY="156.0" prefHeight="25.0" prefWidth="42.0" />
+      <Label layoutX="875.0" layoutY="110.0" text=":" />
+      <Label layoutX="875.0" layoutY="160.0" prefHeight="17.0" prefWidth="3.0" text=":" />
+      <ChoiceBox fx:id="addAppStartAmPmMenu" layoutX="933.0" layoutY="106.0" prefWidth="40.0">
+        <items>
+              <FXCollections fx:factory="observableArrayList">
+                  <String fx:id="AM" fx:value="AM" />
+                  <String fx:id="PM" fx:value="PM" />
+              </FXCollections>
+          </items>
+      </ChoiceBox>
+      <ChoiceBox fx:id="addAppEndAmPmMenu" layoutX="933.0" layoutY="156.0" prefWidth="40.0">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:id="AM" fx:value="AM" />
+                    <String fx:id="PM" fx:value="PM" />
+                </FXCollections>
+            </items>
+        </ChoiceBox> 
+      <TableView fx:id="addAppTableView" layoutX="26.0" layoutY="261.0" prefHeight="250.0" prefWidth="450.0">
+        <columns>
+          <TableColumn fx:id="addAppNameCol" prefWidth="115.0" text="Name" />
+          <TableColumn fx:id="addAppPhoneCol" prefWidth="112.0" text="Phone" />
+            <TableColumn fx:id="addAppCityCol" prefWidth="112.0" text="City" />
+            <TableColumn fx:id="addAppCountryCol" prefWidth="112.0" text="Country" />
+        </columns>
+      </TableView>
+      <TableView fx:id="delAppTableView" layoutX="523.0" layoutY="261.0" prefHeight="250.0" prefWidth="450.0">
+         <columns>
+            <TableColumn fx:id="delAppNameCol" prefWidth="115.0" text="Name" />
+            <TableColumn fx:id="delAppPhoneCol" prefWidth="112.0" text="Phone" />
+            <TableColumn fx:id="delAppCityCol" prefWidth="112.0" text="City" />
+            <TableColumn fx:id="delAppCountryCol" prefWidth="112.0" text="Country" />
+         </columns>
+      </TableView>
+      <Button fx:id="addAppButton" layoutX="34.0" layoutY="529.0" mnemonicParsing="false" onAction="#addAppButtonHandler" prefWidth="100.0" text="Add" />
+      <Button fx:id="delAppButton" layoutX="523.0" layoutY="529.0" mnemonicParsing="false" onAction="#delAppButtonHandler" prefWidth="100.0" text="Delete" />
+      <Button fx:id="saveAppButton" layoutX="760.0" layoutY="566.0" mnemonicParsing="false" onAction="#saveAppButtonHandler" prefWidth="100.0" text="Save" />
+      <Button fx:id="cancelAppButton" layoutX="885.0" layoutY="566.0" mnemonicParsing="false" onAction="#cancelAppButtonHandler" prefWidth="100.0" text="Cancel" />
+   </children>
+</AnchorPane>

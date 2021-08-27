@@ -1,0 +1,6 @@
+There are 2 test users:
+user: joe
+password: 123
+
+user: mike
+password: 123

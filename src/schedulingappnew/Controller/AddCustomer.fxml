@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schedulingappnew.Controller.AddCustomerController">
+   <children>
+      <Label fx:id="addCustTitle" layoutX="20.0" layoutY="14.0" text="Add Customer">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="addCustNameLabel" layoutX="30.0" layoutY="60.0" text="Name:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="addCustAddy1Label" layoutX="30.0" layoutY="100.0" text="Address:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="addCustAddy2Label" layoutX="30.0" layoutY="140.0" text="Address:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="addCustCityLabel" layoutX="30.0" layoutY="180.0" text="City:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="addCustZipLabel" layoutX="30.0" layoutY="220.0" text="Zip:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="addCustCountryLabel" layoutX="30.0" layoutY="260.0" text="Country:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="addCustPhoneLabel" layoutX="30.0" layoutY="300.0" text="Phone:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="addCustNameTf" layoutX="170.0" layoutY="61.0" prefWidth="200.0" promptText="Name" />
+      <TextField fx:id="addCustAddy1Tf" layoutX="170.0" layoutY="101.0" prefWidth="200.0" promptText="Address" />
+      <TextField fx:id="addCustAddy2Tf" layoutX="170.0" layoutY="141.0" prefWidth="200.0" promptText="Address" />
+      <TextField fx:id="addCustCityTf" layoutX="170.0" layoutY="181.0" prefWidth="200.0" promptText="City" />
+      <TextField fx:id="addCustZipTf" layoutX="170.0" layoutY="221.0" prefWidth="200.0" promptText="Zip" />
+      <TextField fx:id="addCustCountryTf" layoutX="170.0" layoutY="261.0" prefWidth="200.0" promptText="Country" />
+      <TextField fx:id="addCustPhoneTf" layoutX="170.0" layoutY="301.0" prefWidth="200.0" promptText="Phone" />
+      <Button fx:id="addCustSaveButton" layoutX="30.0" layoutY="350.0" mnemonicParsing="false" onAction="#addCustSaveButtonHandler" prefWidth="100.0" text="Save" />
+      <Button fx:id="addCustCancelButton" layoutX="270.0" layoutY="350.0" mnemonicParsing="false" onAction="#addCustCancelButtonHandler" prefWidth="100.0" text="Cancel" />
+   </children>
+</AnchorPane>
